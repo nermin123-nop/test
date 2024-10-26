@@ -1,0 +1,7 @@
+import random
+karaterler = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+uzunluk = int(input("Şifrenin uzunluğunu girin:"))
+sifre = ""
+for i in range(uzunluk):
+    sifre += random.choice(karaterler)
+print(sifre)
